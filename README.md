@@ -26,7 +26,9 @@ Also because scrolling through Stack Overflow to find out you had a typo is a un
 ## Install
 
 ```bash
-npm install -g why-cli
+# Coming soon to npm. For now:
+git clone https://github.com/anthoniooladimeji11-coder/why-cli.git
+cd why-cli && npm install && npm link
 ```
 
 You'll need a **free** Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey). Once you have one:
