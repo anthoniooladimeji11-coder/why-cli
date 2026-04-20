@@ -1,22 +1,27 @@
 {
   "name": "why-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A CLI that explains why your last command failed, using AI",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "why": "dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["cli", "ai", "gemini", "terminal", "debugging"],
+  "author": "Anthonio Oladimeji Gabriel",
+  "license": "MIT",
   "dependencies": {
-    "@google/genai": "^1.50.1",
-    "chalk": "^5.6.2"
+    "@google/genai": "^1.48.0",
+    "chalk": "^5.3.0"
   },
   "devDependencies": {
-    "@types/node": "^25.6.0",
-    "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
   }
 }
